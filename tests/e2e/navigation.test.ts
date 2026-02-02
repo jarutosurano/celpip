@@ -15,9 +15,15 @@ test.describe('Site Navigation', () => {
     await page.click('nav >> text=Diary');
     await expect(page).toHaveURL(/\/blog/);
 
-    // Test Resources link
-    await page.click('nav >> text=Resources');
-    await expect(page).toHaveURL(/\/resources/);
+    // Go back to home
+    await page.goto('./');
+
+    // Test Study Guide link
+    await page.click('nav >> text=Study Guide');
+    await expect(page).toHaveURL(/\/guides/);
+
+    // Go back to home
+    await page.goto('./');
 
     // Test About link
     await page.click('nav >> text=About');
@@ -34,14 +40,11 @@ test.describe('Site Navigation', () => {
     await expect(page.locator('h1')).toContainText('My CELPIP Diary');
   });
 
-  test('resources page has external links', async ({ page }) => {
-    await page.goto('./resources');
+  test('study guide loads correctly', async ({ page }) => {
+    await page.goto('./guides/introduction');
 
-    await expect(page.locator('h1')).toContainText('CELPIP Resources');
-
-    // Check for resource cards
-    const resourceCards = page.locator('.resource-card');
-    await expect(resourceCards.first()).toBeVisible();
+    // Starlight docs should have the title
+    await expect(page).toHaveTitle(/Introduction/);
   });
 });
 
@@ -56,14 +59,17 @@ test.describe('Security Headers', () => {
   });
 
   test('external links have proper attributes', async ({ page }) => {
-    await page.goto('./resources');
+    await page.goto('./guides/introduction');
 
     const externalLinks = page.locator('a[target="_blank"]');
     const count = await externalLinks.count();
 
-    for (let i = 0; i < count; i++) {
-      const rel = await externalLinks.nth(i).getAttribute('rel');
-      expect(rel).toContain('noopener');
+    // Skip if no external links on this page
+    if (count > 0) {
+      for (let i = 0; i < count; i++) {
+        const rel = await externalLinks.nth(i).getAttribute('rel');
+        expect(rel).toContain('noopener');
+      }
     }
   });
 });
