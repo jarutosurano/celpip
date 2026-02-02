@@ -2,14 +2,14 @@ import { test, expect } from '@playwright/test';
 
 test.describe('Site Navigation', () => {
   test('homepage loads correctly', async ({ page }) => {
-    await page.goto('/');
+    await page.goto('./');
 
     await expect(page).toHaveTitle(/CELPIP Journey/);
     await expect(page.locator('h1')).toContainText('My CELPIP Journey');
   });
 
   test('navigation links work', async ({ page }) => {
-    await page.goto('/');
+    await page.goto('./');
 
     // Test Diary link
     await page.click('nav >> text=Diary');
@@ -29,13 +29,13 @@ test.describe('Site Navigation', () => {
   });
 
   test('blog page displays posts', async ({ page }) => {
-    await page.goto('/blog');
+    await page.goto('./blog');
 
     await expect(page.locator('h1')).toContainText('My CELPIP Diary');
   });
 
   test('resources page has external links', async ({ page }) => {
-    await page.goto('/resources');
+    await page.goto('./resources');
 
     await expect(page.locator('h1')).toContainText('CELPIP Resources');
 
@@ -50,13 +50,13 @@ test.describe('Security Headers', () => {
     const errors: string[] = [];
     page.on('pageerror', (error) => errors.push(error.message));
 
-    await page.goto('/');
+    await page.goto('./');
 
     expect(errors).toHaveLength(0);
   });
 
   test('external links have proper attributes', async ({ page }) => {
-    await page.goto('/resources');
+    await page.goto('./resources');
 
     const externalLinks = page.locator('a[target="_blank"]');
     const count = await externalLinks.count();
@@ -71,7 +71,7 @@ test.describe('Security Headers', () => {
 test.describe('Responsive Design', () => {
   test('mobile navigation works', async ({ page }) => {
     await page.setViewportSize({ width: 375, height: 667 });
-    await page.goto('/');
+    await page.goto('./');
 
     await expect(page.locator('nav')).toBeVisible();
   });
@@ -79,7 +79,7 @@ test.describe('Responsive Design', () => {
 
 test.describe('Accessibility', () => {
   test('images have alt text', async ({ page }) => {
-    await page.goto('/');
+    await page.goto('./');
 
     const images = page.locator('img');
     const count = await images.count();
@@ -91,7 +91,7 @@ test.describe('Accessibility', () => {
   });
 
   test('page has proper heading hierarchy', async ({ page }) => {
-    await page.goto('/');
+    await page.goto('./');
 
     const h1Count = await page.locator('h1').count();
     expect(h1Count).toBe(1);
