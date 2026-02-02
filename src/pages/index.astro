@@ -121,26 +121,27 @@ const baseUrl = import.meta.env.BASE_URL.endsWith('/')
   h2 {
     font-size: 1.75rem;
     margin-bottom: 1.5rem;
-    color: #333;
+    color: var(--text-primary);
   }
 
   .no-posts {
-    color: #666;
+    color: var(--text-muted);
     font-style: italic;
   }
 
   .test-info ul {
     list-style: none;
     padding: 0;
-    background: #fff;
+    background: var(--card-bg);
     border-radius: 8px;
     padding: 1.5rem;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px var(--shadow-sm);
   }
 
   .test-info li {
     padding: 0.5rem 0;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-secondary);
   }
 
   .test-info li:last-child {

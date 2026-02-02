@@ -1,5 +1,6 @@
 ---
 import '@/styles/global.css';
+import ThemeToggle from '@/components/ThemeToggle.astro';
 
 interface Props {
   title: string;
@@ -20,6 +21,7 @@ const baseUrl = import.meta.env.BASE_URL.endsWith('/')
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
+    <meta name="color-scheme" content="light dark" />
 
     <!-- Security headers via meta tags -->
     <meta http-equiv="X-Content-Type-Options" content="nosniff" />
@@ -30,6 +32,19 @@ const baseUrl = import.meta.env.BASE_URL.endsWith('/')
     <link rel="sitemap" href={`${baseUrl}sitemap-index.xml`} />
 
     <title>{title} | CELPIP Journey</title>
+
+    <!-- Prevent flash of wrong theme -->
+    <script is:inline>
+      (function() {
+        const theme = localStorage.getItem('theme') || 'system';
+        if (theme === 'system') {
+          const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          document.documentElement.setAttribute('data-theme', systemDark ? 'dark' : 'light');
+        } else {
+          document.documentElement.setAttribute('data-theme', theme);
+        }
+      })();
+    </script>
   </head>
   <body>
     <header>
@@ -40,6 +55,7 @@ const baseUrl = import.meta.env.BASE_URL.endsWith('/')
           <li><a href={`${baseUrl}blog`}>Diary</a></li>
           <li><a href={`${baseUrl}resources`}>Resources</a></li>
           <li><a href={`${baseUrl}about`}>About</a></li>
+          <li><ThemeToggle /></li>
         </ul>
       </nav>
     </header>
