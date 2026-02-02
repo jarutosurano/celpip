@@ -1,0 +1,55 @@
+---
+import '@/styles/global.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = 'My CELPIP Exam Journey - A diary documenting my preparation and experience' } = Astro.props;
+// Ensure baseUrl ends with a slash
+const baseUrl = import.meta.env.BASE_URL.endsWith('/')
+  ? import.meta.env.BASE_URL
+  : `${import.meta.env.BASE_URL}/`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- Security headers via meta tags -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-Frame-Options" content="DENY" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <link rel="icon" type="image/png" href={`${baseUrl}favicon.png`} />
+    <link rel="sitemap" href={`${baseUrl}sitemap-index.xml`} />
+
+    <title>{title} | CELPIP Journey</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href={baseUrl} class="logo">CELPIP Journey</a>
+        <ul>
+          <li><a href={baseUrl}>Home</a></li>
+          <li><a href={`${baseUrl}blog`}>Diary</a></li>
+          <li><a href={`${baseUrl}resources`}>Resources</a></li>
+          <li><a href={`${baseUrl}about`}>About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer>
+      <p>&copy; {new Date().getFullYear()} CELPIP Journey. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import FormattedDate from '@/components/FormattedDate.astro';
+
+const posts = (await getCollection('blog'))
+  .filter((post) => !post.data.draft)
+  .sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf());
+
+const baseUrl = import.meta.env.BASE_URL.endsWith('/')
+  ? import.meta.env.BASE_URL
+  : `${import.meta.env.BASE_URL}/`;
+---
+
+<BaseLayout title="Diary" description="My daily CELPIP preparation diary entries">
+  <div class="container">
+    <h1>My CELPIP Diary</h1>
+    <p class="intro">Day-by-day entries documenting my CELPIP preparation journey.</p>
+
+    {posts.length > 0 ? (
+      <div class="blog-list">
+        {posts.map((post) => (
+          <a href={`${baseUrl}blog/${post.slug}`} class="blog-card">
+            <div class="date">
+              <FormattedDate date={post.data.pubDate} />
+            </div>
+            <h3>{post.data.title}</h3>
+            <p>{post.data.description}</p>
+            {post.data.tags.length > 0 && (
+              <div class="tags">
+                {post.data.tags.map((tag) => (
+                  <span class="tag">{tag}</span>
+                ))}
+              </div>
+            )}
+          </a>
+        ))}
+      </div>
+    ) : (
+      <div class="no-posts">
+        <p>No diary entries yet.</p>
+        <p>My journey begins on February 2, 2026. Check back soon!</p>
+      </div>
+    )}
+  </div>
+</BaseLayout>
+
+<style>
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .intro {
+    color: #666;
+    margin-bottom: 2rem;
+  }
+
+  .tags {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+  }
+
+  .tag {
+    background: #e8e8e8;
+    padding: 0.2rem 0.6rem;
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    color: #555;
+  }
+
+  .no-posts {
+    background: #f5f5f5;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    color: #666;
+  }
+</style>
