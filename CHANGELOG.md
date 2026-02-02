@@ -6,6 +6,26 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [2.0.0] - 2026-02-01
+
+### Added
+- Starlight documentation integration for study guides
+- Complete CELPIP study documentation:
+  - Getting Started guides (Introduction, Test Overview, Study Plan)
+  - Listening section (Overview, Strategies, Practice Tips)
+  - Reading section (Overview, Strategies, Practice Tips)
+  - Writing section (Overview, Task 1 Email, Task 2 Survey, Templates)
+  - Speaking section (Overview, All 8 Tasks, Strategies)
+  - Resources (Free, Paid, YouTube Channels)
+- Search functionality via Pagefind
+- Documentation sidebar navigation
+- Back-to-blog link in docs header
+- Changelog workflow documentation in CLAUDE.md
+
+### Changed
+- Updated navigation to include Study Guide link
+- Split site into blog (diary) and docs (study guide)
+
 ## [1.1.0] - 2026-02-01
 
 ### Added
