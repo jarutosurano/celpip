@@ -40,6 +40,10 @@ export default defineConfig({
             { label: 'Overview', slug: 'reading/overview' },
             { label: 'Strategies', slug: 'reading/strategies' },
             { label: 'Practice Tips', slug: 'reading/practice-tips' },
+            { label: 'Part 1: Correspondence', slug: 'reading/part-1-correspondence' },
+            { label: 'Part 2: Diagram', slug: 'reading/part-2-diagram' },
+            { label: 'Part 3: Information', slug: 'reading/part-3-information' },
+            { label: 'Part 4: Viewpoints', slug: 'reading/part-4-viewpoints' },
           ],
         },
         {

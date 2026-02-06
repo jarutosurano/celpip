@@ -6,6 +6,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Added
+- Day 2 blog diary entry covering Reading study session
+- Part 1: Reading Correspondence mastery guide
+- Part 2: Reading to Apply a Diagram mastery guide
+- Part 3: Reading for Information mastery guide
+- Part 4: Reading for Viewpoints mastery guide
+
+### Changed
+- Expanded Reading Overview with test environment, question types (G/S/I), and detailed pacing
+- Expanded Reading Strategies with core skills (skimming, scanning, paraphrase recognition, tone detection) and answer engineering system
+- Expanded Reading Practice Tips with minute-by-minute pacing plans, vocabulary toolkit, and drill routines
+- Updated sidebar navigation to include Reading part-specific guides
+
 ## [2.0.0] - 2026-02-01
 
 ### Added
