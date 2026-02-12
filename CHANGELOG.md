@@ -7,6 +7,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- Language Boosters resource page with power words and phrases for Speaking and Writing
+- Transition Expressions resource page with linking words organized by function
+- Paraphrasing resource page with techniques, tips, and example pairs
 - Day 2 blog diary entry covering Reading study session
 - Part 1: Reading Correspondence mastery guide
 - Part 2: Reading to Apply a Diagram mastery guide
