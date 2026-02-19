@@ -7,6 +7,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- Writing Task 2 Quick System page with 3-step method, 5 memorizable themes, pre-loaded sentences for each theme, and printable cheat sheet
 - Writing Task 2 Survey Template page with step-by-step structure, grammar boosters, model answer, universal sentence starters, and argument themes
 - Writing Task 2 Reusable Template page with fill-in-the-blank skeleton, formula, placeholder reference table, and theme picker
 - Writing Task 1 Reusable Template page with fill-in-the-blank email skeleton, purpose verb picker, transition phrases, and salutation/sign-off pairs
