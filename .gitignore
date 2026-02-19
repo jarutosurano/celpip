@@ -1,14 +1,11 @@
-# Dependencies
-node_modules/
-
 # Build output
-dist/
-.astro/
+site/
 
-# Environment
-.env
-.env.*
-!.env.example
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
 
 # IDE
 .vscode/
@@ -20,14 +17,8 @@ dist/
 .DS_Store
 Thumbs.db
 
-# Test results
-test-results/
-playwright-report/
-coverage/
-
-# Logs
-*.log
-npm-debug.log*
-
-# TypeScript
-*.tsbuildinfo
+# Environment
+.env
+.env.*
+!.env.example
+node_modules

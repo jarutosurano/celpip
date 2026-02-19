@@ -1,0 +1,90 @@
+site_name: CELPIP Study Guide
+site_url: https://jarutosurano.github.io/celpip/
+site_description: Comprehensive guide to prepare for the CELPIP exam
+repo_url: https://github.com/jarutosurano/celpip
+repo_name: jarutosurano/celpip
+
+theme:
+  name: material
+  favicon: assets/favicon.png
+  logo: assets/favicon.png
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - toc.follow
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - tables
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Introduction: guides/introduction.md
+      - Test Overview: guides/test-overview.md
+      - Study Plan: guides/study-plan.md
+  - Listening:
+      - Overview: listening/overview.md
+      - Strategies: listening/strategies.md
+      - Practice Tips: listening/practice-tips.md
+  - Reading:
+      - Overview: reading/overview.md
+      - Strategies: reading/strategies.md
+      - Practice Tips: reading/practice-tips.md
+      - "Part 1: Correspondence": reading/part-1-correspondence.md
+      - "Part 2: Diagram": reading/part-2-diagram.md
+      - "Part 3: Information": reading/part-3-information.md
+      - "Part 4: Viewpoints": reading/part-4-viewpoints.md
+  - Writing:
+      - Overview: writing/overview.md
+      - "Task 1: Email": writing/task-1-email.md
+      - "Task 1: Email Template": writing/task-1-email-template.md
+      - "Task 2: Survey": writing/task-2-survey.md
+      - Templates: writing/templates.md
+  - Speaking:
+      - Overview: speaking/overview.md
+      - All 8 Tasks: speaking/all-tasks.md
+      - Strategies: speaking/strategies.md
+  - Resources:
+      - Free Resources: resources/free.md
+      - Paid Resources: resources/paid.md
+      - YouTube Channels: resources/youtube.md
+      - Language Boosters: resources/language-boosters.md
+      - Transition Expressions: resources/transition-expressions.md
+      - Paraphrasing: resources/paraphrasing.md

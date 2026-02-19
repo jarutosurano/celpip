@@ -4,87 +4,79 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-An Astro-based blog/diary documenting a CELPIP exam preparation journey. Deployed to GitHub Pages with automated CI/CD pipeline.
+A MkDocs Material documentation site serving as a CELPIP exam preparation study guide. Deployed to GitHub Pages with automated CI/CD pipeline.
 
 ## Commands
 
 ```bash
 # Development
-npm run dev          # Start dev server at localhost:4321
-npm run build        # Type check + build for production
-npm run preview      # Preview production build locally
-
-# Testing
-npm run test         # Run unit tests (Vitest)
-npm run test:e2e     # Run E2E tests (Playwright)
-npm run test:all     # Run all tests
-
-# Code Quality
-npm run lint         # Run ESLint
-npm run lint:fix     # Fix ESLint issues
-npm run format       # Format with Prettier
-npm run typecheck    # Run Astro type checking
+pip install -r requirements.txt   # Install dependencies
+mkdocs serve                      # Start dev server at localhost:8000
+mkdocs build                      # Build for production
+mkdocs build --strict             # Build with strict mode (fails on warnings)
 ```
 
 ## Architecture
 
-The site has two main parts:
-1. **Blog** - Personal diary entries (custom Astro pages)
-2. **Docs** - Study guides (Starlight documentation)
+Pure documentation site using MkDocs Material theme.
 
 ```
-src/
-├── content/
-│   ├── blog/           # Markdown diary entries
-│   └── docs/           # Starlight documentation
-│       ├── guides/     # Getting started guides
-│       ├── listening/  # Listening section
-│       ├── reading/    # Reading section
-│       ├── writing/    # Writing section
-│       ├── speaking/   # Speaking section
-│       └── resources/  # Resource links
-├── layouts/
-│   ├── BaseLayout.astro    # Main blog layout
-│   └── BlogPost.astro      # Blog post layout
-├── pages/
-│   ├── index.astro         # Homepage
-│   ├── blog/               # Blog listing
-│   └── about.astro         # About page
-├── components/
-│   ├── ThemeToggle.astro   # Light/dark/system toggle
-│   └── StarlightSiteTitle.astro  # Custom docs header
-└── styles/
-    ├── global.css          # Blog styles
-    └── starlight-custom.css # Docs customization
+docs/
+├── index.md              # Landing page
+├── assets/
+│   └── favicon.png       # Site favicon/logo
+├── guides/               # Getting started guides
+│   ├── introduction.md
+│   ├── test-overview.md
+│   └── study-plan.md
+├── listening/            # Listening section
+│   ├── overview.md
+│   ├── strategies.md
+│   └── practice-tips.md
+├── reading/              # Reading section
+│   ├── overview.md
+│   ├── strategies.md
+│   ├── practice-tips.md
+│   ├── part-1-correspondence.md
+│   ├── part-2-diagram.md
+│   ├── part-3-information.md
+│   └── part-4-viewpoints.md
+├── writing/              # Writing section
+│   ├── overview.md
+│   ├── task-1-email.md
+│   ├── task-1-email-template.md
+│   ├── task-2-survey.md
+│   └── templates.md
+├── speaking/             # Speaking section
+│   ├── overview.md
+│   ├── all-tasks.md
+│   └── strategies.md
+└── resources/            # Resource links
+    ├── free.md
+    ├── paid.md
+    ├── youtube.md
+    ├── language-boosters.md
+    ├── transition-expressions.md
+    └── paraphrasing.md
 
-tests/
-├── unit/               # Vitest unit tests
-└── e2e/                # Playwright E2E tests
+mkdocs.yml                # MkDocs configuration
+requirements.txt          # Python dependencies
 ```
 
-## Content Collections
+## Content Format
 
-Blog posts live in `src/content/blog/` as Markdown files with frontmatter:
+All content is standard Markdown in `docs/`. MkDocs Material features used:
 
-```yaml
----
-title: "Post Title"
-description: "Brief description"
-pubDate: 2026-02-01
-tags: ["tag1", "tag2"]
-draft: false  # Set true to hide from production
----
-```
+- **Frontmatter:** `title` and `description` in YAML
+- **Admonitions:** `!!! note`, `!!! tip "Title"`, `!!! warning "Title"`, `!!! danger "Title"`
+- **Standard Markdown:** tables, lists, code blocks, links
+- **Material extensions:** grid cards, emoji icons, task lists
 
 ## CI/CD Pipeline
 
 On every push/PR to `main`:
-1. **Lint** - ESLint checks
-2. **Type Check** - Astro type validation
-3. **Unit Tests** - Vitest
-4. **Build** - Production build
-5. **E2E Tests** - Playwright against built site
-6. **Deploy** - GitHub Pages (only on main branch push)
+1. **Build** — `mkdocs build --strict` (catches broken links and warnings)
+2. **Deploy** — GitHub Pages (only on main branch push)
 
 ## Changelog Workflow
 
@@ -98,20 +90,9 @@ When making changes, update `CHANGELOG.md` following [Keep a Changelog](https://
    - **Removed** - Removed features
 3. When releasing, move unreleased items to a new version section with date
 
-Example:
-```markdown
-## [Unreleased]
-
-### Added
-- New feature description
-
-## [1.1.0] - 2026-02-01
-...
-```
-
 ## Key Files
 
-- `astro.config.mjs` - Astro configuration (base URL, integrations)
+- `mkdocs.yml` - MkDocs configuration (theme, navigation, extensions)
 - `.github/workflows/ci.yml` - CI/CD pipeline
-- `public/_headers` - Security headers for deployment
+- `requirements.txt` - Python dependencies
 - `CHANGELOG.md` - Project changelog
