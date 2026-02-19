@@ -6,6 +6,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Added
+- Writing Task 2 Survey Template page with step-by-step structure, grammar boosters, model answer, universal sentence starters, and argument themes
+
 ## [3.0.0] - 2026-02-19
 
 ### Added
