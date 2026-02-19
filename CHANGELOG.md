@@ -7,6 +7,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- Writing Task 1 Email Template page with step-by-step structure, grammar boosters, model answer, and universal templates
 - Language Boosters resource page with power words and phrases for Speaking and Writing
 - Transition Expressions resource page with linking words organized by function
 - Paraphrasing resource page with techniques, tips, and example pairs

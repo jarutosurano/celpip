@@ -51,6 +51,7 @@ export default defineConfig({
           items: [
             { label: 'Overview', slug: 'writing/overview' },
             { label: 'Task 1: Email', slug: 'writing/task-1-email' },
+            { label: 'Task 1: Email Template', slug: 'writing/task-1-email-template' },
             { label: 'Task 2: Survey', slug: 'writing/task-2-survey' },
             { label: 'Templates', slug: 'writing/templates' },
           ],
