@@ -7,6 +7,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- Speaking Task 1 Giving Advice template with universal 3-blank system, 4 universal advice options, pairing guide, 2 examples, and memorization checklist
 - Writing Task 1 Practice Prompts page with 5 prompts (noise complaint, gym equipment, late delivery, parking, friend suggestion), fill-in tables, model answers, and quick reminders
 - Writing Task 2 Practice Prompts page with 5 prompts, fill-in tables, model answers, and grammar reminders
 - Writing Task 2 Quick System page with 3-step method, 5 memorizable themes, pre-loaded sentences for each theme, and printable cheat sheet
