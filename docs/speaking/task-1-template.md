@@ -120,6 +120,37 @@ These work for **any prompt**. Just pick 2 from different rows.
 
 ---
 
+## Delivery Tips — Sound Natural, Not Robotic
+
+Memorizing is step 1. **How you say it** pushes your score from 7-8 to 8-9.
+
+### Pause with Purpose
+
+Don't rush. A confident pause before a key phrase sounds natural and dramatic.
+
+| Bad pause (nervous) | Good pause (confident) |
+|--------------------|----------------------|
+| "um... uh... what I think is..." | "I've given this some thought... *(pause)* ...and here's what I think you should do." |
+| "and uh... another thing is..." | "On top of that... *(pause)* ...I would also suggest..." |
+
+### Emphasize Key Words
+
+Stress the **bold** words — it sounds sincere, not flat.
+
+| Line | How to say it |
+|------|--------------|
+| "I completely understand how **challenging** that must be" | Slow down, sound empathetic |
+| "it will **really** help you feel more confident" | Emphasize "really" |
+| "this is **really important** because..." | Sound convinced |
+| "everything will work out **well** for you" | Sound warm, confident |
+| "I'm **always** here for you" | Slow down, sincere tone, smile |
+
+### The Secret: Smile While Speaking
+
+The examiner can **hear** a smile in your voice. It makes the whole response sound warmer and more natural — even if you're reading from memory.
+
+---
+
 ## Memorization Checklist
 
 Practice saying the template out loud until you can do it without looking:
