@@ -21,56 +21,93 @@ description: "A fill-in-the-blank reusable template for CELPIP Writing Task 2 su
 Everything **outside** the brackets stays the same every time. Only fill in the `[BRACKETS]`.
 
 ```
-To the [DEPARTMENT / COUNCIL / COMMITTEE],
+To the [DEPARTMENT],
 
 After careful consideration, I firmly support the proposal that
-[OPTION A — paraphrased using passive voice] rather than
-[OPTION B — paraphrased in 3-5 words]. While both options have
-merit, I believe [OPTION A — short version] offers superior
-benefits in terms of [THEME 1] and [THEME 2].
+[OPTION A — passive voice (be + past participle)] rather than
+[OPTION B — short]. While both options have merit, I believe
+[OPTION A — short] offers superior benefits in terms of
+[THEME 1] and [THEME 2].
 
-First and foremost, the most compelling reason to support
-[OPTION A] is [THEME 1]. Currently, [DESCRIBE THE PROBLEM NOW].
-Consequently, if [OPTION A] is implemented, it will allow
-[WHO] to [BENEFIT], significantly reducing [NEGATIVE ISSUE].
+First and foremost, the most compelling reason to support this
+initiative is [THEME 1]. Currently, many [PEOPLE] experience
+[PROBLEM] due to [CAUSE]. Consequently, if this plan is
+implemented, it will allow [WHO] to [BENEFIT], significantly
+reducing [NEGATIVE THING].
 
-Additionally, this proposal optimizes [THEME 2]. By
-[VERB-ING], the [COMPANY / CITY] ensures that [BENEFIT].
-It provides a unique opportunity for [WHO] to [ACTION],
-which is essential for [BROADER GOAL].
+Additionally, this approach optimizes [THEME 2]. By [VERB-ING]
+the [THING], the [ORGANIZATION] ensures that [BENEFIT]. It
+provides a unique opportunity for [WHO] to [ACTION], which is
+essential for [BROADER GOAL].
 
 Admittedly, some [PEOPLE] might argue that [OPTION B] would
 [ONE GOOD POINT]. However, [OPTION A] better suits our needs
-because [REASON], making it the more practical choice.
+because [FEATURE] can effectively address [THE CONCERN], making
+it the more practical choice.
 
-To sum up, based on the [BENEFIT 1] and [BENEFIT 2], I strongly
-urge [WHO] to proceed with [OPTION A].
+To sum up, based on the improved [THEME 1] and [THEME 2],
+I strongly urge the [DEPARTMENT] to proceed with this plan.
 ```
+
+!!! tip "Four Synonyms — No Repetition"
+
+    The template uses four different words for the same idea. Memorize this order:
+
+    | Location | Word |
+    |----------|------|
+    | Intro | **proposal** |
+    | Body 1 start | **initiative** |
+    | Body 1 middle | **plan** |
+    | Body 2 | **approach** |
 
 ---
 
 ## What to Fill In
 
+### Intro Placeholders
+
 | Placeholder | What It Means | Example |
 |-------------|--------------|---------|
-| `[DEPARTMENT / COUNCIL / COMMITTEE]` | Who you're writing to | HR Department |
-| `[OPTION A — paraphrased using passive voice]` | Your choice rewritten formally | a pet-friendly workplace policy be implemented |
-| `[OPTION B — paraphrased in 3-5 words]` | The other option in short form | maintaining the current no-pets restriction |
-| `[OPTION A — short version]` | A brief label for your choice | the pet-friendly policy |
+| `[DEPARTMENT]` | Who you're writing to | HR Department / community center board / city council |
+| `[OPTION A — passive voice]` | Your choice rewritten formally (be + past participle) | a pet-friendly workplace policy be implemented |
+| `[OPTION B — short]` | The other option in short form | maintaining the current no-pets restriction |
+| `[OPTION A — short]` | A brief label for your choice | the pet-friendly policy |
 | `[THEME 1]` | Your first argument topic | employee well-being |
-| `[THEME 2]` | Your second argument topic (different from Theme 1) | workplace productivity |
-| `[DESCRIBE THE PROBLEM NOW]` | What's wrong with the current situation | many staff members experience heightened stress levels due to demanding workloads |
-| `[WHO]` | The people who benefit | employees |
-| `[BENEFIT]` | What they gain | feel more relaxed throughout the day |
-| `[NEGATIVE ISSUE]` | What gets reduced | workplace anxiety and burnout |
-| `[VERB-ING]` | A gerund describing the action | creating a comfortable and modern work environment |
-| `[COMPANY / CITY]` | The organization involved | company |
-| `[ACTION]` | What the opportunity enables | attract and retain top talent |
-| `[BROADER GOAL]` | The big-picture reason | long-term business growth |
-| `[PEOPLE]` | Who might disagree | colleagues |
-| `[ONE GOOD POINT]` | One real benefit of Option B | prevent allergies and workplace distractions |
-| `[REASON]` | Why Option A still wins | designated pet zones and clear guidelines can effectively address these concerns |
-| `[BENEFIT 1]` and `[BENEFIT 2]` | Summary of your two themes | improvement in employee well-being / the optimization of workplace productivity |
+| `[THEME 2]` | Your second argument topic (different from Theme 1) | cost efficiency |
+
+### Body 1 Placeholders
+
+| Placeholder | What It Means | Example |
+|-------------|--------------|---------|
+| `[PEOPLE]` | Who is affected | residents / employees / families |
+| `[PROBLEM]` | What they're experiencing | limited access to food support / heightened stress levels |
+| `[CAUSE]` | Why it's happening | the lack of an organized donation system / demanding workloads |
+| `[WHO]` | Who benefits | community members / employees / families in need |
+| `[BENEFIT]` | What they gain | access nutritious food on a regular basis |
+| `[NEGATIVE THING]` | What gets reduced | food insecurity / workplace anxiety and burnout |
+
+### Body 2 Placeholders
+
+| Placeholder | What It Means | Example |
+|-------------|--------------|---------|
+| `[VERB-ING]` | Pick a verb: establishing / streamlining / reducing / promoting / improving | establishing a central donation point |
+| `[THING]` | What the verb acts on | collection process / scheduling system / donation program |
+| `[ORGANIZATION]` | The group in charge | community center / company / city council |
+| `[BENEFIT]` | What is ensured | donations are managed efficiently |
+| `[WHO]` | Who gets the opportunity | residents / the organization / families |
+| `[ACTION]` | What the opportunity enables | receive consistent support / attract top talent |
+| `[BROADER GOAL]` | The big-picture reason | community welfare / long-term business growth |
+
+### Body 3 Placeholders
+
+| Placeholder | What It Means | Example |
+|-------------|--------------|---------|
+| `[PEOPLE]` | Who might disagree | residents / colleagues / community members |
+| `[OPTION B]` | The other option | a door-to-door service / a no-pets policy |
+| `[ONE GOOD POINT]` | One real benefit of Option B | offer a more personalized experience |
+| `[OPTION A]` | Your chosen option | the centralized collection point / the pet-friendly policy |
+| `[FEATURE]` | What makes your option work | a fixed schedule / designated pet zones / clear guidelines |
+| `[THE CONCERN]` | The worry from the other side | availability concerns / allergy and distraction concerns |
 
 ---
 
@@ -104,19 +141,19 @@ Before filling in the template, spend 2 minutes deciding:
 | Theme 2 | Productivity and retention |
 | Counter-argument | Allergies and distractions |
 
-**Filled-in template (~195 words):**
+**Filled-in template (~190 words):**
 
 > To the **[HR Department]**,
 >
 > After careful consideration, I firmly support the proposal that **[a pet-friendly workplace policy be implemented]** rather than **[maintaining the current no-pets restriction]**. While both options have merit, I believe **[the pet-friendly policy]** offers superior benefits in terms of **[employee well-being]** and **[workplace productivity]**.
 >
-> First and foremost, the most compelling reason to support **[this policy]** is **[employee well-being]**. Currently, **[many staff members experience heightened stress levels due to demanding workloads and long hours away from home]**. Consequently, if **[pets are permitted in the office]**, it will allow **[employees]** to **[feel more relaxed throughout the day]**, significantly reducing **[workplace anxiety and burnout]**.
+> First and foremost, the most compelling reason to support this initiative is **[employee well-being]**. Currently, many **[staff members]** experience **[heightened stress levels]** due to **[demanding workloads and long hours away from home]**. Consequently, if this plan is implemented, it will allow **[employees]** to **[feel more relaxed throughout the day]**, significantly reducing **[workplace anxiety and burnout]**.
 >
-> Additionally, this proposal optimizes **[productivity and staff retention]**. By **[creating a comfortable and modern work environment]**, the **[company]** ensures that **[employee morale remains consistently high]**. It provides a unique opportunity for **[the organization]** to **[attract and retain top talent]**, which is essential for **[long-term business growth]**.
+> Additionally, this approach optimizes **[productivity and staff retention]**. By **[establishing]** the **[pet-friendly work environment]**, the **[company]** ensures that **[employee morale remains consistently high]**. It provides a unique opportunity for **[the organization]** to **[attract and retain top talent]**, which is essential for **[long-term business growth]**.
 >
-> Admittedly, some **[colleagues]** might argue that **[a no-pets policy]** would **[prevent allergies and workplace distractions]**. However, **[the pet-friendly policy]** better suits our needs because **[designated pet zones and clear guidelines can effectively address these concerns]**, making it the more practical choice.
+> Admittedly, some **[colleagues]** might argue that **[a no-pets policy]** would **[prevent allergies and workplace distractions]**. However, **[the pet-friendly policy]** better suits our needs because **[designated pet zones and clear guidelines]** can effectively address **[these concerns]**, making it the more practical choice.
 >
-> To sum up, based on the **[improvement in employee well-being]** and **[the optimization of workplace productivity]**, I strongly urge **[the HR department]** to proceed with **[the pet-friendly workplace policy]**.
+> To sum up, based on the improved **[employee well-being]** and **[workplace productivity]**, I strongly urge the **[HR Department]** to proceed with this plan.
 
 ---
 
