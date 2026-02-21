@@ -7,6 +7,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- Speaking Task 4 Making Predictions template with left-middle-right scan, 3 future tense levels (going to/will/might), 2 examples, and memorization checklist
 - Speaking Task 3 Describing a Scene template with left-middle-right scan system, mood words, setting pairs, 2 examples, and memorization checklist
 - Speaking Task 2 Personal Experience template with universal 3-blank system, filler phrases, 2 examples, and memorization checklist
 - Speaking Task 1 Giving Advice template with universal 3-blank system, 4 universal advice options, pairing guide, 2 examples, and memorization checklist
