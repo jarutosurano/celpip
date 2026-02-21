@@ -7,6 +7,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ## [Unreleased]
 
 ### Added
+- Speaking Task 6 Difficult Situation template with 2-blank system, validate-however-solution sandwich, polite language built-in, 4 examples, and memorization checklist
 - Speaking Task 5 Comparing and Persuading template with soft rejection opener, 2 price line formulas, adjective pairs, 3 examples, and memorization checklist
 - Speaking Task 4 Making Predictions template with left-middle-right scan, 3 future tense levels (going to/will/might), 2 examples, and memorization checklist
 - Speaking Task 3 Describing a Scene template with left-middle-right scan system, mood words, setting pairs, 2 examples, and memorization checklist
